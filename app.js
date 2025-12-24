@@ -8,6 +8,7 @@ app.use(express.urlencoded({ extended: true })); // Reads Form body
 
 // 2. Routes (The "Traffic Control")
 app.use("/api/schedules", require("./routes/schedules"));
+app.use("/test", require('./routes/practice'))
 
 // 3. Default Route (To see if it works)
 app.get("/", (req, res) => {
